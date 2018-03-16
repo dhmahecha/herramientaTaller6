@@ -10,7 +10,8 @@
         "requirejs": "^2.3.5",
         "resemblejs": "^2.10.0",
         "shelljs": "^0.8.1",
-        "uuid": "^3.2.1"
+        "uuid": "^3.2.1",
+        "xvfb": "^0.2.3"
     },
     "devDependencies": {
         "cypress": "^2.1.0"
