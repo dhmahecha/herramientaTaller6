@@ -1,9 +1,10 @@
 function obtenerReportes(){
+    var reportes;    
     var html = []; 	
     $.ajax({
         type:"GET",
         contentType:"application/json; charset=utf8",
-        url:"http://localhost:8080/api/reportes",
+        url:"https://quiet-escarpment-80769.herokuapp.com/api/reportes",
         success: function (response) {
         	reportes=response;
 		var reporte = "";
@@ -33,7 +34,7 @@ function enviarPrueba(){
     $.ajax({
         type:"GET",
         contentType:"application/json; charset=utf8",
-        url:"http://localhost:8080/ejecutar",
+        url:"https://quiet-escarpment-80769.herokuapp.com/ejecutar",
                success: function (response) {
                    reportes=response;
         },
